@@ -44,18 +44,18 @@ namespace RPG.Dialogue
 
             }
         }
-        public void AddChild(string child)
+        public void AddChild(string childId)
         {
             Undo.RecordObject(this, "Add Node Child");
-            children.Add(child);
+            children.Add(childId);
             EditorUtility.SetDirty(this);
 
         }
 
-        public void RemoveChild(string child)
+        public void RemoveChild(string childId)
         {
             Undo.RecordObject(this, "Remove Node Child");
-            children.Remove(child);
+            children.Remove(childId);
             EditorUtility.SetDirty(this);
 
         }
