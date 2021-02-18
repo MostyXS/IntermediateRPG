@@ -10,6 +10,8 @@ namespace RPG.Dialogue
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
+        bool isPlayerSpeaking = false; //Can be enum
+        [SerializeField]
         private string text;
         [SerializeField]
         private List<string> children = new List<string>();
