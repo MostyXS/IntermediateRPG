@@ -32,6 +32,7 @@ namespace RPG.Dialogue
         {
             Undo.RecordObject(this, "Update Node Position");
             rect.position = newPosition;
+            EditorUtility.SetDirty(this);
         }
         public void SetText(string newText)
         {
@@ -39,18 +40,24 @@ namespace RPG.Dialogue
             {
                 Undo.RecordObject(this, "Update Node Text");
                 text = newText;
+                EditorUtility.SetDirty(this);
+
             }
         }
         public void AddChild(string child)
         {
             Undo.RecordObject(this, "Add Node Child");
             children.Add(child);
+            EditorUtility.SetDirty(this);
+
         }
 
         public void RemoveChild(string child)
         {
             Undo.RecordObject(this, "Remove Node Child");
             children.Remove(child);
+            EditorUtility.SetDirty(this);
+
         }
 #endif
     }
