@@ -11,6 +11,7 @@ namespace RPG.Dialogue
     public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
+        [SerializeField] private Vector2 newNodeOffset = new Vector2(250, 0);
 
         private Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
@@ -29,12 +30,36 @@ namespace RPG.Dialogue
         {
             return nodes;
         }
+
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
+        {
+            foreach(DialogueNode node in GetNodeChildren(currentNode))
+            {
+                if(node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetNodeChildren(currentNode))
+            {
+                if (!node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+
         public DialogueNode GetRootNode()
         {
             return nodes[0];
         }
 
-        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
+        
+
+        public IEnumerable<DialogueNode> GetNodeChildren(DialogueNode parentNode)
         {
             foreach(string nodeId in parentNode.GetChildren())
             {
@@ -60,15 +85,16 @@ namespace RPG.Dialogue
             OnValidate();
         }
 
-        private static DialogueNode MakeNode(DialogueNode parent)
+        private DialogueNode MakeNode(DialogueNode parent)
         {
             var newNode = CreateInstance<DialogueNode>();
             newNode.name = Guid.NewGuid().ToString();
             if (parent != null)
             {
                 parent.AddChild(newNode.name);
+                newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+                newNode.SetPosition(parent.GetRect().position + newNodeOffset);
             }
-
             return newNode;
         }
 

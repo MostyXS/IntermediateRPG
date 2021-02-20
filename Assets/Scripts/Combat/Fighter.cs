@@ -20,8 +20,7 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
-        
-        
+
 
         Health target;
         Mover mover;
@@ -97,7 +96,6 @@ namespace RPG.Combat
             GetComponent<Mover>().Cancel();
             target = null;
         }
-
         public bool CanAttack(GameObject combatTarget)
         {
             if (!mover.CanMoveTo(combatTarget.transform.position)

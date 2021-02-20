@@ -10,13 +10,20 @@ namespace RPG.Dialogue
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
-        bool isPlayerSpeaking = false; //Can be enum
+        private string nameOverride = "";
         [SerializeField]
+        private bool isPlayerSpeaking = false; //Can be enum
+        [SerializeField]
+        [TextArea(3,50)]
         private string text;
         [SerializeField]
         private List<string> children = new List<string>();
         [SerializeField]
-        private Rect rect = new Rect(0, 0, 200, 200);
+        private Rect rect = new Rect(0, 0, 300, 300);
+        [SerializeField]
+        private string onEnterAction;
+        [SerializeField]
+        private string onExitAction;
         public string GetText()
         {
             return text;
@@ -29,6 +36,20 @@ namespace RPG.Dialogue
         {
             return rect;
         }
+        public bool IsPlayerSpeaking()
+        {
+            return isPlayerSpeaking;
+        }
+        public string GetOnEnterAction()
+        {
+            return onEnterAction;
+        }
+        
+        public string GetOnExitAction()
+        {
+            return onExitAction;
+        }
+
 #if UNITY_EDITOR
         public void SetPosition(Vector2 newPosition)
         {
@@ -42,6 +63,32 @@ namespace RPG.Dialogue
             {
                 Undo.RecordObject(this, "Update Node Text");
                 text = newText;
+                EditorUtility.SetDirty(this);
+
+            }
+        }
+
+        public string GetNameOverride()
+        {
+            return nameOverride;
+        }
+
+        public void SetOnEnterAction(string newEnterAction)
+        {
+            if (newEnterAction != onEnterAction)
+            {
+                Undo.RecordObject(this, "Update Node Enter Action");
+                onEnterAction = newEnterAction;
+                EditorUtility.SetDirty(this);
+
+            }
+        }
+        public void SetOnExitAction(string newExitAction)
+        {
+            if (newExitAction != onExitAction)
+            {
+                Undo.RecordObject(this, "Update Node Exit Action");
+                onExitAction = newExitAction;
                 EditorUtility.SetDirty(this);
 
             }
@@ -60,6 +107,13 @@ namespace RPG.Dialogue
             children.Remove(childId);
             EditorUtility.SetDirty(this);
 
+        }
+
+        public void SetPlayerSpeaking(bool value)
+        {
+            Undo.RecordObject(this, "Update Player Speaking");
+            isPlayerSpeaking = value;
+            EditorUtility.SetDirty(this);
         }
 #endif
     }

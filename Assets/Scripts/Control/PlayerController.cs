@@ -13,7 +13,7 @@ namespace RPG.Control
     {
         [SerializeField] float raycastInteractRadius = 1f;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
-        [SerializeField] CursorMapping[] mappings = null;
+        [SerializeField] CursorMapping[] cursorMappings = null;
 
         bool isDraggingUI = false;
        
@@ -126,12 +126,12 @@ namespace RPG.Control
 
         private CursorMapping GetCursorMapping(CursorType cursorType)
         {
-            foreach (CursorMapping mapping in mappings)
+            foreach (CursorMapping mapping in cursorMappings)
             {
                 if (mapping.type != cursorType) continue;
                 return mapping;
             }
-            return mappings[0];
+            return cursorMappings[0];
         }
 
         private bool InteractWithMovement()
