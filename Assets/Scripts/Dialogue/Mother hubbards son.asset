@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8954929364050595119
+--- !u!114 &-6297588477125156064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,163 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 7489531b-26e0-46a3-8458-319835a6ddaf
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 1
-  text: Who?
-  children:
-  - c085d3c1-6392-458c-93ae-61d44984cb3c
-  rect:
-    serializedVersion: 2
-    x: 1351
-    y: 303
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &-8697960891637287946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 448e5747-d485-44e0-bd08-e374ce35341f
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 1
-  text: Mr. Bowler is a good friend of mine!
-  children:
-  - 77c90c18-6074-4106-9cef-5e2b5b9a53fe
-  rect:
-    serializedVersion: 2
-    x: 1354
-    y: 0
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &-5160611609857313807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: f3b59884-8f0d-4fdc-ad5f-32a8d2cdeba6
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 1
-  text: I came here from Newton.
-  children:
-  - 19b8002b-ed83-4fcd-bb0b-9c2c79b950da
-  rect:
-    serializedVersion: 2
-    x: 408
-    y: 654
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &-2801119559287613997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 43c66713-7cf7-4bda-bbbc-def18bea7372
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 1
-  text: Did i say Newton? I'm actually from Springville.
-  children:
-  - 738c2ec3-1f12-4739-b4db-b42f7362cefe
-  rect:
-    serializedVersion: 2
-    x: 1349
-    y: 957
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &-1783388089809902975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 4830725a-fff6-4d45-a258-668085b013aa
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 1
-  text: I haven't heard about any trouble
-  children:
-  - c085d3c1-6392-458c-93ae-61d44984cb3c
-  rect:
-    serializedVersion: 2
-    x: 1360
-    y: 623
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &-538348952933209885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: c085d3c1-6392-458c-93ae-61d44984cb3c
+  m_Name: 3e0b1376-d86b-4883-97d6-f04619b404aa
   m_EditorClassIdentifier: 
   nameOverride: 
   isPlayerSpeaking: 0
-  text: Don't you worry about it. Say, do you have something to eat? I'm starving
-  children: []
+  text: My mom has terrible bunions, can you help?
+  children:
+  - d79f1c15-7e97-4e6d-8cbc-9b56c3afe02a
+  - 0746ce57-049e-4abb-9cce-5cac7b5d9dd2
+  - f1e53513-00e6-4203-821e-94db3a03ffe1
+  - aa681428-0927-46a4-80bc-c474a3667601
   rect:
     serializedVersion: 2
-    x: 1752
-    y: 475
+    x: 7
+    y: 119
     width: 300
     height: 300
   onEnterAction: 
-  onExitAction: TestObjective
+  onExitAction: 
   condition:
-    predicate: 
-    parametrs: []
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 1
+--- !u!114 &-6229228686377742538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: d70b698e-b85c-4a83-b73b-a81576c082aa
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 0
+  text: :*(
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 919
+    y: -29
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,22 +71,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f84a9ff90f4adba47b9d612f51ecb1d8, type: 3}
-  m_Name: New in Town
+  m_Name: Mother hubbards son
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 2219061920913404043}
-  - {fileID: 6952781597185333908}
-  - {fileID: -5160611609857313807}
-  - {fileID: 5891348504615380641}
-  - {fileID: 3270934933225003606}
-  - {fileID: -1783388089809902975}
-  - {fileID: -8697960891637287946}
-  - {fileID: 317107473970884034}
-  - {fileID: -8954929364050595119}
-  - {fileID: -538348952933209885}
-  - {fileID: -2801119559287613997}
-  newNodeOffset: {x: 400, y: 0}
---- !u!114 &317107473970884034
+  - {fileID: -6297588477125156064}
+  - {fileID: 7685994514297738877}
+  - {fileID: 2311536331089483153}
+  - {fileID: 1074398396186665298}
+  - {fileID: -6229228686377742538}
+  - {fileID: 812050508156370679}
+  - {fileID: 6488238992724143542}
+  - {fileID: 5782881388694034877}
+  - {fileID: 99541576056481739}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &99541576056481739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,24 +94,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 77c90c18-6074-4106-9cef-5e2b5b9a53fe
+  m_Name: a8c326c2-96bf-42a4-9b6e-cca55eac8d9e
   m_EditorClassIdentifier: 
   nameOverride: 
   isPlayerSpeaking: 0
-  text: You liar! There ain't no Mr. Bowler, I made him up!
+  text: That's amazing thank you!
   children: []
   rect:
     serializedVersion: 2
-    x: 1734
-    y: 17
+    x: 968
+    y: 953
     width: 300
     height: 300
   onEnterAction: 
-  onExitAction: Attack
+  onExitAction: CompleteObjective
   condition:
-    predicate: 
-    parametrs: []
---- !u!114 &2219061920913404043
+    and: []
+--- !u!114 &812050508156370679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,108 +120,188 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 5ea35846-26b6-4c65-9793-6b14658bfcb7
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 0
-  text: You don't like you're from around there
-  children:
-  - b31d0ec3-d57a-4d69-9b98-86cfc6614f09
-  - f3b59884-8f0d-4fdc-ad5f-32a8d2cdeba6
-  rect:
-    serializedVersion: 2
-    x: 29
-    y: 392
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &3270934933225003606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 19b8002b-ed83-4fcd-bb0b-9c2c79b950da
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 0
-  text: Newton, eh? I hear there's trouble brewing down there
-  children:
-  - 4830725a-fff6-4d45-a258-668085b013aa
-  - 43c66713-7cf7-4bda-bbbc-def18bea7372
-  rect:
-    serializedVersion: 2
-    x: 821
-    y: 785
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &5891348504615380641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: 738c2ec3-1f12-4739-b4db-b42f7362cefe
-  m_EditorClassIdentifier: 
-  nameOverride: 
-  isPlayerSpeaking: 0
-  text: Oh really? Then you must know Mr. Bowler.
-  children:
-  - 448e5747-d485-44e0-bd08-e374ce35341f
-  - 7489531b-26e0-46a3-8458-319835a6ddaf
-  rect:
-    serializedVersion: 2
-    x: 858
-    y: 145
-    width: 300
-    height: 300
-  onEnterAction: 
-  onExitAction: 
-  condition:
-    predicate: 
-    parametrs: []
---- !u!114 &6952781597185333908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
-  m_Name: b31d0ec3-d57a-4d69-9b98-86cfc6614f09
+  m_Name: f1e53513-00e6-4203-821e-94db3a03ffe1
   m_EditorClassIdentifier: 
   nameOverride: 
   isPlayerSpeaking: 1
-  text: I've lived here all my life
+  text: I'm already on the case
   children:
-  - 738c2ec3-1f12-4739-b4db-b42f7362cefe
+  - 3197ad37-ec31-491f-bc38-d24eedd12025
   rect:
     serializedVersion: 2
-    x: 465
-    y: 188
+    x: 515
+    y: 645
     width: 300
     height: 300
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parametrs: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 1
+--- !u!114 &1074398396186665298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: abb7bbf9-cc20-4c07-8da6-70c99e7a1e89
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 0
+  text: She needs the foot cream from the pharmacy.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 911
+    y: 287
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &2311536331089483153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: 0746ce57-049e-4abb-9cce-5cac7b5d9dd2
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 1
+  text: Sure, how?
+  children:
+  - abb7bbf9-cc20-4c07-8da6-70c99e7a1e89
+  rect:
+    serializedVersion: 2
+    x: 510
+    y: 271
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 1
+--- !u!114 &5782881388694034877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: aa681428-0927-46a4-80bc-c474a3667601
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 1
+  text: 'I have the foot cream! '
+  children:
+  - a8c326c2-96bf-42a4-9b6e-cca55eac8d9e
+  rect:
+    serializedVersion: 2
+    x: 510
+    y: 1040
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 0
+    - or:
+      - predicate: HasInventoryItem
+        parametrs:
+        - 593ab72b-b61c-40d2-83ba-31801c089d39
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 1
+--- !u!114 &6488238992724143542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: 3197ad37-ec31-491f-bc38-d24eedd12025
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 0
+  text: Oops, bad memory.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 966
+    y: 587
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7685994514297738877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a866d0d104fdc34b940c0e7cd3358fb, type: 3}
+  m_Name: d79f1c15-7e97-4e6d-8cbc-9b56c3afe02a
+  m_EditorClassIdentifier: 
+  nameOverride: 
+  isPlayerSpeaking: 1
+  text: Do I look like a doctor?
+  children:
+  - d70b698e-b85c-4a83-b73b-a81576c082aa
+  rect:
+    serializedVersion: 2
+    x: 454
+    y: -38
+    width: 300
+    height: 300
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parametrs:
+        - Mother hubbards bunions
+        negate: 1

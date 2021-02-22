@@ -1,3 +1,4 @@
+using RPG.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,8 @@ namespace RPG.Dialogue.Editor
         [NonSerialized]
         private GUIStyle textAreaStyle;
         [NonSerialized]
+        private GUIStyle predicateNodeStyle;
+        [NonSerialized]
         private DialogueNode draggingNode = null;
         [NonSerialized]
         private DialogueNode creatingNode = null;
@@ -31,6 +34,8 @@ namespace RPG.Dialogue.Editor
         private Vector2 scrollPosition;
         [NonSerialized]
         bool draggingCanvas = false;
+        
+
 
         [NonSerialized]
         const float CANVAS_SIZE = 4000f;
@@ -86,7 +91,14 @@ namespace RPG.Dialogue.Editor
             playerNodeStyle.padding = new RectOffset(20, 20, 20, 20);
             playerNodeStyle.border = new RectOffset(12, 12, 12, 12);
         }
-        
+        private void AssignPredicateNodeStyle()
+        {
+            predicateNodeStyle = new GUIStyle();
+            predicateNodeStyle.normal.background = EditorGUIUtility.Load("node3") as Texture2D;
+            playerNodeStyle.normal.textColor = Color.white;
+            playerNodeStyle.padding = new RectOffset(20, 20, 20, 20);
+            playerNodeStyle.border = new RectOffset(12, 12, 12, 12);
+        }
         private void OnSelectionChanged()
         {
             var newDialogue = Selection.activeObject as Dialogue;
@@ -233,18 +245,34 @@ namespace RPG.Dialogue.Editor
         {
             GUIStyle nodeStyle = node.IsPlayerSpeaking() ? playerNodeStyle : npcNodeStyle;
             GUILayout.BeginArea(node.GetRect(), nodeStyle);
-            HandleTextChange(node);
-            HandlePlayerSpeakingChange(node);
+            DrawTextField(node);
+            DrawPlayerSpeak(node);
 
             DrawNodeButtons(node);
 
-            HandleEnterActionChange(node);
-            HandleExitActionChange(node);
+            //DrawCondition(node);
+
+            DrawEnterAction(node);
+            DrawExitAction(node);
 
             GUILayout.EndArea();
         }
 
-        private void HandleTextChange(DialogueNode node)
+        /*private void DrawCondition(DialogueNode node)
+        {
+            EditorGUI.BeginChangeCheck();
+
+            Condition newCondition = EditorGUILayout.ObjectField(node.GetCondition())
+
+
+            if(EditorGUI.EndChangeCheck())
+            {
+
+            }
+
+        }*/
+
+        private void DrawTextField(DialogueNode node)
         {
             EditorGUILayout.LabelField("Node Text:");
             EditorGUI.BeginChangeCheck();
@@ -256,7 +284,7 @@ namespace RPG.Dialogue.Editor
             }
         }
 
-        private static void HandlePlayerSpeakingChange(DialogueNode node)
+        private static void DrawPlayerSpeak(DialogueNode node)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Space(node.GetRect().width - 166);
@@ -318,7 +346,7 @@ namespace RPG.Dialogue.Editor
             GUILayout.EndHorizontal();
         }
 
-        private static void HandleEnterActionChange(DialogueNode node)
+        private static void DrawEnterAction(DialogueNode node)
         {
             EditorGUILayout.LabelField("Node Enter Action:");
             EditorGUI.BeginChangeCheck();
@@ -330,7 +358,7 @@ namespace RPG.Dialogue.Editor
             }
         }
 
-        private static void HandleExitActionChange(DialogueNode node)
+        private static void DrawExitAction(DialogueNode node)
         {
             EditorGUILayout.LabelField("Node Exit Action:");
 

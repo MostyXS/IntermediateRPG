@@ -1,3 +1,4 @@
+using RPG.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,6 +25,9 @@ namespace RPG.Dialogue
         private string onEnterAction;
         [SerializeField]
         private string onExitAction;
+        [SerializeField]
+        private Condition condition;
+
         public string GetText()
         {
             return text;
@@ -49,7 +53,18 @@ namespace RPG.Dialogue
         {
             return onExitAction;
         }
-
+        public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
+        {
+            return condition.Check(evaluators);
+        }
+        public string GetNameOverride()
+        {
+            return nameOverride;
+        }
+        public Condition GetCondition()
+        {
+            return condition;
+        }
 #if UNITY_EDITOR
         public void SetPosition(Vector2 newPosition)
         {
@@ -67,12 +82,16 @@ namespace RPG.Dialogue
 
             }
         }
-
-        public string GetNameOverride()
+        public void SetCondition(Condition newCondition)
         {
-            return nameOverride;
+            if(newCondition != condition)
+            {
+                Undo.RecordObject(this, "Update Node Condition");
+                condition = newCondition;
+                EditorUtility.SetDirty(this);
+            }
         }
-
+        
         public void SetOnEnterAction(string newEnterAction)
         {
             if (newEnterAction != onEnterAction)
@@ -115,6 +134,8 @@ namespace RPG.Dialogue
             isPlayerSpeaking = value;
             EditorUtility.SetDirty(this);
         }
+
+        
 #endif
     }
 
