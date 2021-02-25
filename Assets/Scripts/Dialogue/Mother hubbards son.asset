@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3e0b1376-d86b-4883-97d6-f04619b404aa
   m_EditorClassIdentifier: 
   nameOverride: 
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   text: My mom has terrible bunions, can you help?
   children:
   - d79f1c15-7e97-4e6d-8cbc-9b56c3afe02a
